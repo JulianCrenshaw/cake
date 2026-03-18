@@ -1,5 +1,5 @@
 import React from 'react'
-import UndrawBooks from '../assets/Undraw_Books.svg'
+import Party from '../assets/party.png'
 import { Link } from 'react-router-dom/cjs/react-router-dom'
 
 const Landing = () => {
@@ -15,7 +15,7 @@ const Landing = () => {
             </a>
         </div>
         <figure className="header__img--wrapper">
-            <img src={ UndrawBooks } alt="" />
+            <img src={ Party } alt="" />
         </figure>
     </div>
 </header>
