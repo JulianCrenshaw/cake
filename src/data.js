@@ -58,8 +58,8 @@ export const books = [
   },
   {
     id: 8,
-    title: "Cashflow Quadrant",
-    url: "https://m.media-amazon.com/images/I/71+SWQ6xj1L._AC_UF1000,1000_QL80_.jpg",
+    title: "Vegan Vanilla Cupcakes",
+    url: "https://earthly-provisions.com/wp-content/uploads/2024/04/Vegan-Vanilla-Cupcakes-9.jpg",
     originalPrice: 38,
     salePrice: 17.95,
     rating: 4.5,
