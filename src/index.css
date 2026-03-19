@@ -58,7 +58,7 @@ li {
 
 h1 {
   font-size: 56px;
-  color: #3449d4;
+  color: #000000;
   margin-bottom: 24px;
   text-align: center;
 }
@@ -93,7 +93,7 @@ button:hover {
 }
 
 .blue {
-  color: #3449d4;
+  color: #d4d134;
 }
 
 .logo {
@@ -231,12 +231,12 @@ LANDING
 */
 
 #landing {
-  background-color: rgba(115, 66, 214, 0.1)
+  background-color: rgb(107, 82, 82)
 }
 
 header {
   height: calc(100vh - 80px);
-  background: rgb(225, 241, 255);
+  background: rgba(182, 182, 182, 0.412);
 }
 
 .header__container {
