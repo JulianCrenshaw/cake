@@ -8,7 +8,7 @@ const Landing = () => {
 <header>
     <div className="header__container">
         <div className="header__description">
-            <h1>Satisfy your sweet tooth with our delicious Deserts!</h1>
+            <h1>Satisfy your sweet tooth with our delicious Desserts!</h1>
             <h2>Find your sweets in our <span className="blue">Inventory</span></h2>
             <a href="#features">
                 <button className="btn">Browse Deserts</button>
