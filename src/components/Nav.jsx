@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import DessertLogo from '../assets/Dessert.jpg';
+import DessertLogo from '../assets/Dessert.png';
 import { Link } from "react-router-dom/cjs/react-router-dom";
 
 const Nav = ({ cart}) => {
