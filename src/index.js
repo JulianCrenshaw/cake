@@ -9,14 +9,14 @@ import {
   faShoppingCart,
   faTimes,
   faCake,
-  faBookOpen,
+  faCookieBite,
   faTags,
   faStar,
   faStarHalfAlt,
   faArrowLeft
 } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faBars, faShoppingCart, faTimes, faCake, faBookOpen, faTags, faStar, faStarHalfAlt, faArrowLeft);
+library.add(faBars, faShoppingCart, faTimes, faCake, faCookieBite, faTags, faStar, faStarHalfAlt, faArrowLeft);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
