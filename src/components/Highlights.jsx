@@ -12,7 +12,7 @@ const Highlights = () => {
           </h2>
           <div className="highlight__wrapper">
             <Highlight
-              icon={<FontAwesomeIcon icon="bolt" />}
+              icon={<FontAwesomeIcon icon="cake" />}
               title="Easy and Quick"
               para="Get access to the book you purchased online instantly"
             />
