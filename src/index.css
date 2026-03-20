@@ -115,7 +115,7 @@ button:hover {
   font-size: 20px;
   font-weight: bold;
   padding: 8px;
-  color: #3449d4;
+  color: #3d3d34;
 }
 
 .nav__list {
@@ -130,7 +130,7 @@ button:hover {
 }
 
 .nav__link--primary {
-  border: 2px solid #3449d4;
+  border: 2px solid #3d3d34;
   border-radius: 4px;
 }
 
@@ -142,7 +142,7 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #3449d4;
+  color: #3d3d34;
   font-size: 20px;
   position: relative;
   margin-left: 8px;
@@ -168,7 +168,7 @@ button:hover {
   background-color: transparent;
   font-size: 32px;
   border: none;
-  color: #3449d4;
+  color: #3d3d34;
   display: none;
 }
 
@@ -341,7 +341,7 @@ HIGHLIGHTS
 
 .highlight__img {
   border: 2px solid #3449d45d;
-  color: #3449d4;
+  color: #3d3d34;
   width: 100px;
   height: 100px;
   display: flex;
@@ -651,7 +651,7 @@ select {
 */
 
 .cart__header {
-  background-color: #3449d4;
+  background-color: #3d3d34;
   margin: 0 24px;
   padding: 8px 16px;
   color: white;
@@ -744,7 +744,7 @@ select {
 }
 
 .total__sub-total {
-  border-top: 2px solid #3449d4;
+  border-top: 2px solid #3d3d34;
   padding-top: 24px;
 }
 
