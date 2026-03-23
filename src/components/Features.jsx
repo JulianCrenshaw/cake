@@ -11,7 +11,7 @@ const Features = () => {
       <div className="container">
         <div className="row">
           <h2 className="section__title">
-            Features <span className="blue">Books</span>
+            Featured <span className="blue">Desserts</span>
           </h2>
           <div className="books">
             {books
