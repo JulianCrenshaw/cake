@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '../assets/Library.svg'
+import DessertLogo from '../assets/Dessert.png'
 import { Link } from 'react-router-dom/cjs/react-router-dom'
 
 const Footer = () => {
@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="row row__column">
             <Link to="/">
             <figure className="footer__logo">
-                <img src={Logo} alt="" className='footer__logo--img' />
+                <img src={DessertLogo} alt="" className='footer__logo--img' />
             </figure>
             </Link>
             <div className="footer__list">
