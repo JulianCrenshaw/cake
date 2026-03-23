@@ -25,7 +25,7 @@ const Nav = ({ cart}) => {
           </li>
           <li className="nav__list">
             <Link to="/books" className="nav__link">
-              Books
+              Desserts
             </Link>
           </li>
           <button className="btn__menu" onClick={openMenu}>
