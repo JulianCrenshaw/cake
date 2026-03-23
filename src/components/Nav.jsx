@@ -50,7 +50,7 @@ const Nav = ({ cart}) => {
                 </li>
                 <li className="menu__list">
                     <Link to="/books" className="menu__link">
-                    Books
+                    Desserts
                     </Link>
                 </li>
                 <li className="menu__list">
