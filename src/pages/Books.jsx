@@ -24,7 +24,7 @@ const Books = ({ books: initialBooks }) => {
             <div className="row">
               <div className="books__header">
                 <h2 className="section__title books__header--title">
-                  All Books
+                  All Desserts
                 </h2>
                 <select id="filter" defaultValue="DEFAULT" onChange={(event) => filterBooks(event.target.value)}>
                   <option value="DEFAULT" disabled>
