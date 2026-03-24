@@ -105,7 +105,7 @@ const Cart = ({ cart, changeQuantity, removeFromCart }) => {
               </div>
               {cart.length === 0 ? (
                 <Link to="/books">
-                  <button className="btn btn__checkout">Explore Books</button>
+                  <button className="btn btn__checkout">Explore Desserts</button>
                 </Link>
               ) : (
                 <button
