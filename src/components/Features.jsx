@@ -1,10 +1,10 @@
 
 import React from "react";
-import Book from "./ui/Dessert";
-import { books } from "../data";
+import Dessert from "./ui/Dessert";
+import { desserts } from "../data";
 
 const Features = () => {
-  console.log(books);
+  console.log(desserts);
   console.log();
   return (
     <section id="features">
@@ -14,11 +14,11 @@ const Features = () => {
             Featured <span className="blue">Desserts</span>
           </h2>
           <div className="books">
-            {books
+            {desserts
               .filter((book) => book.rating === 5)
               .slice(0, 4)
               .map((book) => (
-                <Book book={book} key={book.id} />
+                <Dessert book={book} key={book.id} />
               ))}
           </div>
         </div>

@@ -1,6 +1,6 @@
 import React from "react";
-import { books } from "../data";
-import Book from "./ui/Dessert";
+import { desserts } from "../data";
+import Dessert from "./ui/Dessert";
 
 const Discounted = () => {
   return (
@@ -11,11 +11,11 @@ const Discounted = () => {
             What <span className="blue">Desserts</span> are on sale
           </h2>
           <div className="books">
-            {books
+            {desserts
             .filter(book => book.salePrice > 0)
             .slice(0, 8)
             .map((book) => (
-              <Book book={book} key={book.id} />
+              <Dessert book={book} key={book.id} />
             ))}
           </div>
         </div>
