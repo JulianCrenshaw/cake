@@ -13,12 +13,12 @@ const Features = () => {
           <h2 className="section__title">
             Featured <span className="blue">Desserts</span>
           </h2>
-          <div className="books">
+          <div className="desserts">
             {desserts
-              .filter((book) => book.rating === 5)
+              .filter((dessert) => dessert.rating === 5)
               .slice(0, 4)
-              .map((book) => (
-                <Dessert book={book} key={book.id} />
+              .map((dessert) => (
+                <Dessert dessert={dessert} key={dessert.id} />
               ))}
           </div>
         </div>

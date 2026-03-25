@@ -14,16 +14,16 @@ const Cart = ({ cart, changeQuantity, removeFromCart }) => {
   const tax = (subtotal * 0.1).toFixed(2);
   const totalPrice = (subtotal + Number(tax)).toFixed(2);
   return (
-    <div id="books__body">
-      <main id="books__main">
-        <div className="books__container">
+    <div id="desserts__body">
+      <main id="desserts__main">
+        <div className="desserts__container">
           <div className="row">
-            <div className="book__selected--top">
+            <div className="dessert__selected--top">
               <h2 className="cart__title">Cart</h2>
             </div>
             <div className="cart">
               <div className="cart__header">
-                <span className="cart__book">Dessert</span>
+                <span className="cart__dessert">Dessert</span>
                 <span className="cart__quantity">Quantity</span>
                 <span className="cart__total">Price</span>
               </div>
@@ -38,28 +38,28 @@ const Cart = ({ cart, changeQuantity, removeFromCart }) => {
                     You have no items here!!
                   </h2>
                 ) : (
-                  cart.map((book) => {
+                  cart.map((dessert) => {
                     return (
-                      <div className="cart__item" key={book.id}>
-                        <div className="cart__book">
+                      <div className="cart__item" key={dessert.id}>
+                        <div className="cart__dessert">
                           <img
-                            src={book.url}
-                            className="cart__book--img"
+                            src={dessert.url}
+                            className="cart__dessert--img"
                             alt=""
                           />
-                          <div className="cart__book--info">
-                            <span className="cart__book--title">
-                              {book.title}
+                          <div className="cart__dessert--info">
+                            <span className="cart__dessert--title">
+                              {dessert.title}
                             </span>
-                            <span className="cart__book--price">
+                            <span className="cart__dessert--price">
                               $
-                              {(book.salePrice || book.originalPrice).toFixed(
+                              {(dessert.salePrice || dessert.originalPrice).toFixed(
                                 2,
                               )}
                             </span>
                             <button
-                              className="cart__book--remove"
-                              onClick={() => removeFromCart(book)}
+                              className="cart__dessert--remove"
+                              onClick={() => removeFromCart(dessert)}
                             >
                               Remove
                             </button>
@@ -71,17 +71,17 @@ const Cart = ({ cart, changeQuantity, removeFromCart }) => {
                             min={0}
                             max={99}
                             className="cart__input"
-                            value={book.quantity}
+                            value={dessert.quantity}
                             onChange={(event) =>
-                              changeQuantity(book, event.target.value)
+                              changeQuantity(dessert, event.target.value)
                             }
                           />
                         </div>
                         <div className="cart__total">
                           $
                           {(
-                            (book.salePrice || book.originalPrice) *
-                            book.quantity
+                            (dessert.salePrice || dessert.originalPrice) *
+                            dessert.quantity
                           ).toFixed(2)}
                         </div>
                       </div>
@@ -104,7 +104,7 @@ const Cart = ({ cart, changeQuantity, removeFromCart }) => {
                 <span>${totalPrice}</span>
               </div>
               {cart.length === 0 ? (
-                <Link to="/books">
+                <Link to="/desserts">
                   <button className="btn btn__checkout">Explore Desserts</button>
                 </Link>
               ) : (

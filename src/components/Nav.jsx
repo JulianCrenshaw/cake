@@ -24,7 +24,7 @@ const Nav = ({ cart}) => {
             </Link>
           </li>
           <li className="nav__list">
-            <Link to="/books" className="nav__link">
+            <Link to="/desserts" className="nav__link">
               Desserts
             </Link>
           </li>
@@ -49,7 +49,7 @@ const Nav = ({ cart}) => {
                     </Link>
                 </li>
                 <li className="menu__list">
-                    <Link to="/books" className="menu__link">
+                    <Link to="/desserts" className="menu__link">
                     Desserts
                     </Link>
                 </li>

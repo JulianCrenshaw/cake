@@ -3,69 +3,69 @@ import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom/cjs/react-router-dom";
 import Rating from "../components/ui/Rating";
 import Price from "../components/ui/Price";
-import Book from "../components/ui/Dessert";
+import Dessert from "../components/ui/Dessert";
 
-const BookInfo = ({ books, addToCart, cart }) => {
+const DessertInfo = ({ desserts, addToCart, cart }) => {
   const { id } = useParams();
-  const book = books.find((book) => +book.id === +id);
+  const dessert = desserts.find((dessert) => +dessert.id === +id);
 
 
-  function addBookToCart(book) {
-    addToCart(book);
+  function addDessertToCart(dessert) {
+    addToCart(dessert);
   }    
 
-  function bookExistsOnCart() {
-   return cart.find(book => +book.id === +id);
+  function dessertExistsOnCart() {
+   return cart.find(dessert => +dessert.id === +id);
 
   }
 
   return (
-    <div id="books__body">
-      <main id="books__main">
-        <div className="books__container">
+    <div id="desserts__body">
+      <main id="desserts__main">
+        <div className="desserts__container">
           <div className="row">
-            <div className="book__selected--top">
-              <Link to="/books" className="book__link">
+            <div className="dessert__selected--top">
+              <Link to="/desserts" className="dessert__link">
                 <FontAwesomeIcon icon="arrow-left" />
               </Link>
-              <Link to="/books" className="book__link">
-                <h2 className="book__selected--title--top">Books</h2>
+              <Link to="/desserts" className="dessert__link">
+                <h2 className="dessert__selected--title--top">Desserts</h2>
               </Link>
             </div>
-            <div className="book__selected">
-              <figure className="book__selected--figure">
-                <img src={book.url} alt="" className="book__selected--img" />
+            <div className="dessert__selected">
+              <figure className="dessert__selected--figure">
+                <img src={dessert.url} alt="" className="dessert__selected--img" />
               </figure>
-              <div className="book__selected--description">
-                <h2 className="book__selected--title">{book.title}</h2>
-                <Rating rating={book.rating} />
-                <div className="book__selected--price">
+              <div className="dessert__selected--description">
+                <h2 className="dessert__selected--title">{dessert.title}</h2>
+                <Rating rating={dessert.rating} />
+                <div className="dessert__selected--price">
                   <Price
-                    originalPrice={book.originalPrice}
-                    salePrice={book.salePrice}
+                    originalPrice={dessert.originalPrice}
+                    salePrice={dessert.salePrice}
                   />
                 </div>
-                <div className="book__summary">
-                  <h3 className="book__summary--title">Summary</h3>
-                  <p className="book__summary--para">
-                    An amazing book about a great deal of practice in how to
+                <div className="dessert__summary">
+                  <h3 className="dessert__summary--title">Summary</h3>
+                  <p className="dessert__summary--para">
+                    An amazing dessert about a great deal of practice in how to
                     achieve success in a interview for a coding job near your
                     location weather if it is long term or short term. More
-                    books like this are availabe below!
+                    desserts like this are availabe below!
                   </p>
-                  <p className="book__summary--para">
-                    An amazing book about a great deal of practice in how to
+                  <p className="dessert__summary--para">
+                    An amazing dessert about a great deal of practice in how to
                     achieve success in a interview for a coding job near your
                     location weather if it is long term or short term. More
-                    books like this are availabe below!
+                    desserts like this are availabe below!
                   </p>
                 </div>
-                {bookExistsOnCart() ? (
+                {dessertExistsOnCart() ? (
                   <Link to="/cart">
                   <button className="btn">Checkout</button>
                   </Link>
                 ) : (
-                  <button className="btn" onClick={() => addBookToCart(book)}>
+                  <button className="btn" onClick={() => addDessertToCart(dessert)}>
                     Add to cart
                   </button>
                 )}
@@ -74,17 +74,17 @@ const BookInfo = ({ books, addToCart, cart }) => {
           </div>
         </div>
 
-        <div className="books__container">
+        <div className="desserts__container">
           <div className="row">
-            <div className="book__selected--top">
-              <h2 className="book__selected--title--top">Recommended Books</h2>
+            <div className="dessert__selected--top">
+              <h2 className="dessert__selected--title--top">Recommended desserts</h2>
             </div>
-            <div className="books">
-              {books
-                .filter((book) => book.rating === 5 && +book.id !== +id)
+            <div className="desserts">
+              {desserts
+                .filter((dessert) => dessert.rating === 5 && +dessert.id !== +id)
                 .slice(0, 4)
-                .map((book) => (
-                  <Book book={book} key={book.id} />
+                .map((dessert) => (
+                  <Dessert dessert={dessert} key={dessert.id} />
                 ))}
             </div>
           </div>
@@ -94,4 +94,4 @@ const BookInfo = ({ books, addToCart, cart }) => {
   );
 };
 
-export default BookInfo;
+export default DessertInfo;

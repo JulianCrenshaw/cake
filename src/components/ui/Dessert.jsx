@@ -4,23 +4,23 @@ import { Link } from "react-router-dom/cjs/react-router-dom";
 import Rating from "./Rating";
 import Price from "./Price";
 
-const Book = ({ book }) => {
+const Dessert = ({ dessert }) => {
   return (
-    <div className="book">
-      <Link to={`/books/${book.id}`}>
-        <figure className="book__img--wrapper">
-          <img src={book.url} alt="" className="book__img" />
+    <div className="dessert">
+      <Link to={`/desserts/${dessert.id}`}>
+        <figure className="dessert__img--wrapper">
+          <img src={dessert.url} alt="" className="dessert__img" />
         </figure>
       </Link>
-      <div className="book__title">
-        <Link to={`/books/${book.id}`} className="book__title--link">
-          {book.title}
+      <div className="dessert__title">
+        <Link to={`/desserts/${dessert.id}`} className="dessert__title--link">
+          {dessert.title}
         </Link>
       </div>
-      <Rating rating={book.rating} />
-     <Price salePrice={book.salePrice} originalPrice={book.originalPrice} />
+      <Rating rating={dessert.rating} />
+     <Price salePrice={dessert.salePrice} originalPrice={dessert.originalPrice} />
     </div>
   );
 };
 
-export default Book;
+export default Dessert;

@@ -10,12 +10,12 @@ const Discounted = () => {
           <h2 className="section__title">
             What <span className="blue">Desserts</span> are on sale
           </h2>
-          <div className="books">
+          <div className="desserts">
             {desserts
-            .filter(book => book.salePrice > 0)
+            .filter(dessert => dessert.salePrice > 0)
             .slice(0, 8)
-            .map((book) => (
-              <Dessert book={book} key={book.id} />
+            .map((dessert) => (
+              <Dessert dessert={dessert} key={dessert.id} />
             ))}
           </div>
         </div>
