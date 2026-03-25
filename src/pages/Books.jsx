@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Book from "../components/ui/Book"
+import Dessert from "../components/ui/Dessert.jsx"
 
 const Books = ({ books: initialBooks }) => {
     const [books, setBooks] = useState(initialBooks)
@@ -37,7 +37,7 @@ const Books = ({ books: initialBooks }) => {
               </div>
               <div className="books">
                 {books.map((book) => (
-                  <Book book={book} key={book.id} />
+                  <Dessert book={book} key={book.id} />
                 ))}
               </div>
             </div>
