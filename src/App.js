@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Books from "./pages/Books";
 import { desserts } from "./data";
-import BookInfo from "./pages/BookInfo";
+import DessertInfo from "./pages/DessertInfo";
 import Cart from "./pages/Cart";
 import { useEffect, useState } from "react";
 
@@ -45,7 +45,7 @@ function App() {
         <Route
           path="/books/:id"
           render={() => (
-            <BookInfo desserts={desserts} addToCart={addToCart} cart={cart} />
+            <DessertInfo desserts={desserts} addToCart={addToCart} cart={cart} />
           )}
         />
         <Route
