@@ -267,7 +267,7 @@ header {
   padding: 56px 0;
 }
 
-.books__container {
+.desserts__container {
   padding: 24px 0;
 }
 
@@ -369,29 +369,29 @@ FEATURES
   background-color: rgba(115, 66, 214, 0.1);
 }
 
-.books {
+.desserts {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -24px;
 }
 
-.book {
+.dessert {
   width: 25%;
   padding: 24px;
   transition: all 300ms ease;
 }
 
-.book:hover {
+.dessert:hover {
   transform: translateY(-4px);
 }
 
-.book__img {
+.dessert__img {
   max-height: 320px;
   max-width: 250px;
   transition: all 300ms ease;
 }
 
-.book__img--skeleton {
+.dessert__img--skeleton {
   width: 100%;
   max-width: 250px;
   height: 320px;
@@ -404,47 +404,47 @@ FEATURES
   margin-bottom: 8px;
 }
 
-.book__title--skeleton {
+.dessert__title--skeleton {
   height: 21px;
   width: 100%;
 }
 
-.book__rating--skeleton {
+.dessert__rating--skeleton {
   width: 100px;
   height: 19px;
 }
 
-.book__price--skeleton {
+.dessert__price--skeleton {
   width : 200px;
   height: 19px;
 }
 
-.book__link {
+.dessert__link {
   color: #242424;
 }
 
-.book__img--wrapper {
+.dessert__img--wrapper {
   margin-bottom: 8px;
   border-radius: 4px;
   overflow: hidden;
   display: flex;
 }
 
-.book__title {
+.dessert__title {
   font-size: 20px;
   margin-bottom: 8px;
 }
 
-.book__title--link {
+.dessert__title--link {
   color: #242424;
 }
 
-.book__ratings {
+.dessert__ratings {
   margin-bottom: 8px;
   color: #fabf2a;
 }
 
-.book__price--normal {
+.dessert__price--normal {
   text-decoration: line-through;
   padding-right: 6px;
   color: #bfbfbf;
@@ -495,31 +495,31 @@ footer {
 /* 
 **
 
-BOOKS PAGE
+dessertS PAGE
 
 **
 */
 
-#books__body {
+#desserts__body {
   background-color: rgba(115, 66, 214, 0.1);
   flex: 1;
   display: flex;
   flex-direction: column;
 }
 
-#books__main {
+#desserts__main {
   flex: 1;
   background-color: rgb(248,249,250);
 }
 
-.books__header {
+.desserts__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 24px;
 }
 
-.books__header--title {
+.desserts__header--title {
   margin-bottom: 0;
 }
 
@@ -536,7 +536,7 @@ select {
   max-width: 200px;
 }
 
-.books__loading {
+.desserts__loading {
   width: 100%;
   display: flex;
   align-items: center;
@@ -562,19 +562,19 @@ select {
 
 /* 
 
-  book/:id
+  dessert/:id
     
 */
 
-.container__book--selected {
+.container__dessert--selected {
   padding-top: 16px;
 }
 
-.book__selected {
+.dessert__selected {
   display: flex;
 }
 
-.book__selected--figure {
+.dessert__selected--figure {
   width: 40%;
   padding: 16px 32px;
   display: flex;
@@ -582,13 +582,13 @@ select {
   align-items: center;
 }
 
-.book__selected--img {
+.dessert__selected--img {
   max-height: 500px;
   width: auto;
   max-width: 100%;
 }
 
-.book__selected--description {
+.dessert__selected--description {
   width: 60%;
   padding: 16px 32px;
   display: flex;
@@ -596,7 +596,7 @@ select {
   align-items: flex-start;
 }
 
-.book__selected--top {
+.dessert__selected--top {
   padding: 0 24px;
   margin-bottom: 8px;
   font-size: 32px;
@@ -605,7 +605,7 @@ select {
   align-items: center;
 }
 
-.book__selected--link {
+.dessert__selected--link {
   color: #242424;
 }
 
@@ -613,28 +613,28 @@ select {
   font-size: 30px;
 }
 
-.book__selected--title--top {
+.dessert__selected--title--top {
   margin-left: 10px;
   margin-bottom: 0;
 }
 
-.book__summary {
+.dessert__summary {
   margin-bottom: 16px;
 }
 
-.book__selected--title {
+.dessert__selected--title {
   margin-bottom: 8px
 }
 
-.book__summary--title {
+.dessert__summary--title {
   margin-bottom: 8px;
 }
 
-.book__summary--para {
+.dessert__summary--para {
   margin-bottom: 16px;
 }
 
-.book__price {
+.dessert__price {
   font-size: 16px;
   margin: 8px 0 24px 0;
 }
@@ -668,7 +668,7 @@ select {
   margin-bottom: 16px;
 }
 
-.cart__book {
+.cart__dessert {
   width: 60%;
   display: flex;
 }
@@ -693,30 +693,30 @@ select {
   width: 60px;
 }
 
-.cart__book--img {
+.cart__dessert--img {
   width: 100%;
   max-width: 90px;
   max-height: 128px;
 }
 
 
-.cart__book--info {
+.cart__dessert--info {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 8px 16px;
 }
 
-.cart__book--title {
+.cart__dessert--title {
   font-size: 20px;
   margin-bottom: 16px;
 }
 
-.cart__book--price {
+.cart__dessert--price {
   margin-bottom: 16px;
 }
 
-.cart__book--remove {
+.cart__dessert--remove {
   background-color: transparent;
   color: #cf0000;
   border: none;
@@ -788,18 +788,18 @@ select {
     font-size: 18px;
   }
 
-  .book {
+  .dessert {
     width: 50%;
   }
 
-  .book__selected {
+  .dessert__selected {
     flex-direction: column;
   }
-  .book__selected--figure {
+  .dessert__selected--figure {
     width: 100%;
     justify-content: flex-start;
   }
-  .book__selected--description {
+  .dessert__selected--description {
     width: 100%;
   }
 }
@@ -823,10 +823,10 @@ select {
     margin-bottom: 24px;
   }
 
-  .cart__book--img {
+  .cart__dessert--img {
     display: none;
   }
-  .cart__book--info {
+  .cart__dessert--info {
     padding-left: 0;
   }
 }
