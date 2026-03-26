@@ -1,5 +1,5 @@
 import React from "react";
-import emptyCart from "../assets/empty_cart.svg";
+import emptyCart from "../assets/undraw_cooking.svg";
 import { Link } from "react-router-dom/cjs/react-router-dom";
 
 const Cart = ({ cart, changeQuantity, removeFromCart }) => {
