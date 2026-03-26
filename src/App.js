@@ -2,7 +2,7 @@ import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Books from "./pages/Desserts";
+import Desserts from "./pages/Desserts";
 import { desserts } from "./data";
 import DessertInfo from "./pages/DessertInfo";
 import Cart from "./pages/Cart";
@@ -11,14 +11,14 @@ import { useEffect, useState } from "react";
 function App() {
   const [cart, setCart] = useState([]);
 
-  function addToCart(book) {
-    setCart([...cart, { ...book, quantity: 1 }]);
+  function addToCart(dessert) {
+    setCart([...cart, { ...dessert, quantity: 1 }]);
   }
 
-  function changeQuantity(book, quantity) {
+  function changeQuantity(dessert, quantity) {
     setCart(
       cart.map((item) =>
-        item.id === book.id
+        item.id === dessert.id
           ? {
               ...item,
               quantity: +quantity,
@@ -28,8 +28,8 @@ function App() {
     );
   }
 
-  function removeFromCart(book) {
-    setCart(cart.filter((item) => item.id !== book.id));
+  function removeFromCart(dessert) {
+    setCart(cart.filter((item) => item.id !== dessert.id));
   }
 
   useEffect(() => {
@@ -41,9 +41,9 @@ function App() {
       <div className="App">
         <Nav cart={cart}/>
         <Route path="/" exact component={Home} />
-        <Route path="/books" exact render={() => <Books desserts={desserts} />} />
+        <Route path="/desserts" exact render={() => <Desserts desserts={desserts} />} />
         <Route
-          path="/books/:id"
+          path="/desserts/:id"
           render={() => (
             <DessertInfo desserts={desserts} addToCart={addToCart} cart={cart} />
           )}

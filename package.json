@@ -1,6 +1,6 @@
 {
-  "homepage": "https://JulianCrenshaw.github.io/new-books-project",
-  "name": "new-books-project",
+  "homepage": "https://JulianCrenshaw.github.io/bakery",
+  "name": "bakery",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
