@@ -14,7 +14,7 @@ const Highlights = () => {
             <Highlight
               icon={<FontAwesomeIcon icon="cake" />}
               title="Fresh and Ready"
-              para="Get access to the book you purchased online instantly"
+              para="Each order will ready fresh and decorated the day of pick up"
             />
             <Highlight
               icon={<FontAwesomeIcon icon="cookie-bite" />}
