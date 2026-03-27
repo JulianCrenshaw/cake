@@ -18,7 +18,7 @@ const Highlights = () => {
             />
             <Highlight
               icon={<FontAwesomeIcon icon="cookie-bite" />}
-              title="10,000+ Books"
+              title="Variety of Desserts"
               para="Library has books in all your favorite catagories"
             />
             <Highlight
