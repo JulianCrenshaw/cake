@@ -23,7 +23,7 @@ const Highlights = () => {
             />
             <Highlight
               icon={<FontAwesomeIcon icon="tags" />}
-              title="Affordable"
+              title="Daily Deals"
               para="Get your hands on popular books for as little as $10"
             />
           </div>
