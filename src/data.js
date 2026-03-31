@@ -44,7 +44,7 @@ export const desserts = [
     id: 6,
     title: "Bread Pudding",
     url: "https://simplyhomecooked.com/wp-content/uploads/2021/11/bread-pudding-recipe-6.jpg",
-    originalPrice: 70,
+    originalPrice: 30,
     salePrice: 12.5,
     rating: 5,
   },
