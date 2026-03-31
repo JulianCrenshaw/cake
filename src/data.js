@@ -4,7 +4,7 @@ export const desserts = [
     id: 1,
     title: "Chocolate Cake",
     url: "https://m.media-amazon.com/images/I/81eFq-feqQL._SL1500_.jpg",
-    originalPrice: 49.95,
+    originalPrice: 35.95,
     salePrice: 14.95,
     rating: 4.5,
   },
