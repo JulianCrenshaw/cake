@@ -12,7 +12,7 @@ export const desserts = [
     id: 2,
     title: "Vanilla Cake",
     url: "https://thescranline.com/wp-content/uploads/2025/02/VANILLA-CAKE-25-S-01.jpg",
-    originalPrice: 39,
+    originalPrice: 35,
     salePrice: null,
     rating: 5,
   },
