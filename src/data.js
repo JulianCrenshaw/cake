@@ -68,8 +68,8 @@ export const desserts = [
     id: 9,
     title: "Vegan Red Velvet Cupcakes",
     url: "https://www.danceswithknives.com/wp-content/uploads/2026/02/vegan-red-velvet-cupcakes-square-group.jpg",
-    originalPrice: 35,
-    salePrice: 19.95,
+    originalPrice: 20,
+    salePrice: 9.95,
     rating: 4.5,
   },
   {
