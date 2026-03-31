@@ -92,7 +92,7 @@ export const desserts = [
     id: 12,
     title: "Honey Cupcake",
     url: "https://wholesomepatisserie.com/wp-content/uploads/2024/08/honey-cupcakes-recipe.jpg",
-    originalPrice: 30,
+    originalPrice: 25,
     salePrice: 12.95,
     rating: 4.5,
   },
