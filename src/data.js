@@ -28,7 +28,7 @@ export const desserts = [
     id: 4,
     title: "Lemon Cake",
     url: "https://www.modernhoney.com/wp-content/uploads/2024/02/Best-Lemon-Cake-4-crop-scaled.jpg",
-    originalPrice: 44,
+    originalPrice: 35,
     salePrice: 19,
     rating: 4.5,
   },
